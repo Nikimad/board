@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: var(--violet-400);
+    border-bottom: 1px solid var(--violet-300);
+    height: fit-content;
+    width: 100%;
+}
+
+.header__button {
+    margin-left: auto;
+    font-weight: 700;
+    background-color: var(--violet-200);
+    border-radius: var(--br);
+    padding: 0.625em 1.25em;
+}
+
+.header__button:hover {
+    background-color: var(--violet-100);
+}
+
+@media screen and (max-width: 768px) {
+    .header__button__name {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
