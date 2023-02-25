@@ -1,0 +1,56 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --violet-100: hsl(244, 81%, 65%);/*interact*/
+    --violet-200: hsl(243, 47%, 57%);/*interact hover*/
+    --violet-300: hsl(240, 16%, 30%);/*border*/
+    --violet-400: hsl(240, 21%, 22%);/*elements*/
+    --violet-500: hsl(240, 27%, 18%);/*page*/
+    --br: 10px;
+    --transition: 0.3s;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-Bold.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: var(--transition);
+    padding: 0;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    color: var(--white);
+    background-color: var(--violet-500);
+    height: 100vh;
+    height: 100svh;
+    margin: 0;
+}
