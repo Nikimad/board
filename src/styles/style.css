@@ -57,7 +57,5 @@ body {
     font-family: "Nunito Sans", sans-serif;
     color: var(--white);
     background-color: var(--violet-500);
-    height: 100vh;
-    height: 100svh;
     margin: 0;
 }
