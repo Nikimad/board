@@ -1,8 +1,12 @@
 import "./Aside.css";
+import { ReactComponent as Logo } from "../../assets/svg/logo.svg";
 
 const Aside = () => (
   <aside className="aside">
-    <h1 className="title">Boards</h1>
+    <div className="aside__presentation">
+      <Logo />
+      <h1 className="title">Boards</h1>
+    </div>
     <div className="navbar">
       <h2 className="navbar__title">All boards (3)</h2>
       <nav className="navbar__nav">

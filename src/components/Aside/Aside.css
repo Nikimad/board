@@ -8,10 +8,24 @@
     transform: translateY(-1000%);
 }
 
+.logo {
+    width: 1.95em;
+}
+
 .title {
-    font-size: 1.9em;
-    border-bottom: 1px solid var(--violet-300);
-    padding: 1rem;
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.aside__presentation {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    align-items: center;
+    gap: 0.25em;
+    padding: 1em;
 }
 
 .aside[aria-hidden="false"] {
@@ -19,7 +33,7 @@
 }
 
 .navbar {
-    padding: 1.5em 1.5em 0 0;
+    padding-right: 1.5em;
 }
 
 .navbar__title {
