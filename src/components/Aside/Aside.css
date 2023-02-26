@@ -5,7 +5,7 @@
     height: 100svh;
     position: absolute;
     width: 100%;
-    transform: translateY(-100%);
+    transform: translateY(-1000%);
 }
 
 .title {
@@ -22,13 +22,22 @@
     padding: 1.5em 1.5em 0 0;
 }
 
+.navbar__title {
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    padding: 0 1.7em 2em ;
+}
+
 .navbar__nav {
     display: grid;
 }
 
 .navbar__nav__item {
     font-weight: 700;
-    color: inherit;
+    color: var(--dark-blue);
     text-decoration: none;
     border-radius: 0 var(--br) var(--br) 0;
     transition: var(--transition);
@@ -38,10 +47,11 @@
 }
 
 .navbar__nav__item:hover:not(.active) {
-    color: var(--violet-200);
+    color: var(--white);
 }
 
 .navbar__nav__item.active {
+    color: var(--white);
     background-color: var(--violet-100);
 }
 

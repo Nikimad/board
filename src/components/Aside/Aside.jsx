@@ -4,6 +4,7 @@ const Aside = () => (
   <aside className="aside">
     <h1 className="title">Boards</h1>
     <div className="navbar">
+      <h2 className="navbar__title">All boards (3)</h2>
       <nav className="navbar__nav">
         <a href="/path" className="navbar__nav__item active">Platform Launch</a>
         <a href="/path" className="navbar__nav__item">Marketing Plan</a>
