@@ -2,8 +2,8 @@ import "./Aside.css";
 
 const Aside = () => (
   <aside className="aside">
+    <h1 className="title">Boards</h1>
     <div className="navbar">
-      <h1>Boards</h1>
       <nav className="navbar__nav">
         <a href="/path" className="navbar__nav__item active">Platform Launch</a>
         <a href="/path" className="navbar__nav__item">Marketing Plan</a>

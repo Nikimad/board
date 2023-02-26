@@ -5,11 +5,21 @@
     height: 100svh;
     position: absolute;
     width: 100%;
-    transform: translateY(-100%)
+    transform: translateY(-100%);
+}
+
+.title {
+    font-size: 1.9em;
+    border-bottom: 1px solid var(--violet-300);
+    padding: 1rem;
 }
 
 .aside[aria-hidden="false"] {
     transform: translateY(0);
+}
+
+.navbar {
+    padding: 1.5em 1.5em 0 0;
 }
 
 .navbar__nav {
@@ -22,6 +32,8 @@
     text-decoration: none;
     border-radius: 0 var(--br) var(--br) 0;
     transition: var(--transition);
+    min-width: 200px;
+    width: min-content;
     padding: 0.625em 1.25em;
 }
 
@@ -34,10 +46,11 @@
 }
 
 .navbar__button {
+    text-align: left;
     font-weight: 700;
     color: var(--violet-200);
-    width: fit-content;
     border-radius: 0 var(--br) var(--br) 0;
+    min-width: 200px;
     padding: 0.625em 1.25em;
 }
 
@@ -50,6 +63,6 @@
     .aside {
         position: static;
         transform: translateY(0);
-        width: fit-content;
+        width: 300px;
     }
 }
