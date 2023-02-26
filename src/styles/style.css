@@ -5,7 +5,7 @@
     --violet-200: hsl(243, 47%, 57%);/*interact hover*/
     --violet-300: hsl(240, 16%, 30%);/*border*/
     --violet-400: hsl(240, 21%, 22%);/*elements*/
-    --violet-500: hsl(240, 27%, 18%);/*page*/
+    --violet-500: hsl(240, 26%, 18%);/*page*/
     --br: 10px;
     --transition: 0.3s;
 }
