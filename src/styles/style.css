@@ -1,5 +1,6 @@
 :root {
     --white: hsl(0, 0%, 100%);
+    --dark-blue: hsl(224, 10%, 55%); /**/
     --violet-100: hsl(244, 81%, 65%);/*interact*/
     --violet-200: hsl(243, 47%, 57%);/*interact hover*/
     --violet-300: hsl(240, 16%, 30%);/*border*/
@@ -19,6 +20,12 @@
     font-family: "Nunito Sans";
     font-weight: 700;
     src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-weight: 900;
+    src: url("/src/assets/fonts/Nunito_Sans/NunitoSans-Black.ttf");
 }
 
 * {
