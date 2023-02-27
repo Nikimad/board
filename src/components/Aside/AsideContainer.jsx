@@ -7,7 +7,7 @@ const AsideContainer = () => {
     const dispatch = useDispatch();
     const handleSet = (e) => {
         e.preventDefault();
-        dispatch(setActive(e.target.textContent));
+        dispatch(setActive(e.target.id));
     };
 
     return <Aside onSet={handleSet} active={active} />;

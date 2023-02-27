@@ -1,7 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  active: "Platform Launch"
+  active: "platform",
+  platform: {
+    name: "Platform Launch",
+  },
+  marketing: {
+    name: "Marketing Plan",
+  },
+  roadmap: {
+    name: "Roadmap"
+  }
 }
 
 const boardsSlice = createSlice({
