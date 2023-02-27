@@ -1,13 +1,16 @@
 import { useSelector, useDispatch } from "react-redux";
-import { boardAdd, boardsSelectors } from "../../features/boards/boardsSlice";
+import { setActive } from "../../features/boards/boardsSlice";
 import Aside from "./Aside";
 
 const AsideContainer = () => {
-    const boards = useSelector(boardsSelectors.selectAll);
+    const active = useSelector((state) => state.boards.active);
     const dispatch = useDispatch();
-    const handleAdd = () => dispatch(boardAdd("Board"));
+    const handleSet = (e) => {
+        e.preventDefault();
+        dispatch(setActive(e.target.textContent));
+    };
 
-    return <Aside boards={boards} onAdd={handleAdd} />;
+    return <Aside onSet={handleSet} active={active} />;
 };
 
 export default AsideContainer;

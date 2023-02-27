@@ -1,23 +1,19 @@
-import { createSlice, createEntityAdapter } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
-const boardsAdapter = createEntityAdapter();
+const initialState = {
+  active: "Platform Launch"
+}
 
 const boardsSlice = createSlice({
   name: "boards",
-  initialState: boardsAdapter.getInitialState(),
+  initialState,
   reducers: {
-    boardAdd(state, { payload }) {
-      return boardsAdapter.addOne(state, {
-        name: payload,
-        tasks: [],
-        id: Date.now(),
-      });
-    },
+    setActive(state, {payload}) {
+      state.active = payload;
     }
+  }
 });
 
-export const boardsSelectors = boardsAdapter.getSelectors((state) => state.boards);
-
-export const { boardAdd } = boardsSlice.actions;
+export const { setActive } = boardsSlice.actions;
 
 export default boardsSlice.reducer;
