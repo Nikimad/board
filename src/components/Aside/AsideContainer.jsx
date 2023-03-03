@@ -1,18 +1,18 @@
 import { useSelector, useDispatch } from "react-redux";
-import { setActive, setVissible } from "../../features/boards/boardsSlice";
+import { setActive, setHidden } from "../../features/boards/boardsSlice";
 import Aside from "./Aside";
 
 const AsideContainer = () => {
     const active = useSelector((state) => state.boards.active);
-    const vissible = useSelector((state) => state.boards.vissible);
+    const isHidden = useSelector((state) => state.boards.isHidden);
     const dispatch = useDispatch();
     const handleSet = (e) => {
         e.preventDefault();
         dispatch(setActive(e.target.id));
-        dispatch(setVissible());
+        dispatch(setHidden());
     };
 
-    return <Aside onSet={handleSet} active={active} isHidden={vissible} />;
+    return <Aside onSet={handleSet} active={active} isHidden={isHidden} />;
 };
 
 export default AsideContainer;
