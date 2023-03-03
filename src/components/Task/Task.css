@@ -1,0 +1,29 @@
+.task {
+    display: grid;
+    border-radius: var(--br);
+    background-color: var(--violet-400);
+    max-width: 300px;
+    height: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 1em;
+}
+
+.task:hover {
+    transform: scale(1.075);
+}
+
+.task::marker {
+    content: "";
+}
+
+.task__title {
+    margin: 0;
+}
+
+.task__subtasks-counter {
+    font-size: 0.75em;
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin: 0;
+}
