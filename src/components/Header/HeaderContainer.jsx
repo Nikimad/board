@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setVissible } from "../../features/boards/boardsSlice";
+import { setVissible } from "../../features/boardsUI/boardsUISlice";
 import Header from "./Header";
 
 const HeaderConteiner = () => {
