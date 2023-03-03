@@ -6,7 +6,8 @@
     height: 100svh;
     position: absolute;
     width: 100%;
-    transform: translateY(-1000%);
+    transform: translateX(-100%);
+    transition: 0.3s;
 }
 
 .logo {
@@ -22,15 +23,14 @@
 
 .aside__presentation {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: min-content;
+    grid-template-columns: min-content 1fr;
     align-items: center;
     gap: 0.25em;
     padding: 1em;
 }
 
 .aside[aria-hidden="false"] {
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .navbar {

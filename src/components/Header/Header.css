@@ -20,6 +20,16 @@
     background-color: var(--violet-100);
 }
 
+.header__presentaiton {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 0.25em;
+}
+
+.header__presentaiton .presentation__button {
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     .header__button__name {
         position: absolute;
@@ -32,5 +42,16 @@
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
         overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__presentaiton {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .header__presentaiton .presentation__button {
+        display: none;
     }
 }

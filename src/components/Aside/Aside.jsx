@@ -2,8 +2,8 @@ import "./Aside.css";
 import { ReactComponent as Logo } from "../../assets/svg/logo.svg";
 import cn from "classnames";
 
-const Aside = ({onSet, active}) => (
-  <aside className="aside">
+const Aside = ({onSet, active, isHidden}) => (
+  <aside className="aside" aria-hidden={isHidden}>
     <div className="aside__presentation">
       <Logo />
       <h1 className="title">Boards</h1>

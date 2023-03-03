@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
+  vissible: true,
   active: "platform",
   platform: {
     name: "Platform Launch",
@@ -17,12 +18,15 @@ const boardsSlice = createSlice({
   name: "boards",
   initialState,
   reducers: {
+    setVissible(state) {
+      state.vissible = !state.vissible;
+    },
     setActive(state, {payload}) {
       state.active = payload;
     }
   }
 });
 
-export const { setActive } = boardsSlice.actions;
+export const { setVissible, setActive } = boardsSlice.actions;
 
 export default boardsSlice.reducer;
